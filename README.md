@@ -10,8 +10,7 @@ In this paper, we present a novel selfsupervised learning method for transformer
 of the input spectrogram and reconstructs the masked regions with an encoder-decoder architecture. Without using extra model weights or supervision, experimental results on multiple downstream datasets demonstrate MaskSpec achieves a significant performance gain against the supervised methods and
 outperforms the previous pre-trained models. 
 In particular, our best model reaches the performance of 0.471 (mAP) on AudioSet, 0.854 (mAP) on OpenMIC2018, 0.982 (accuracy) on ESC-50, 0.976 (accuracy) on SCV2, and 0.823 (accuracy) on DCASE2019 Task1A respectively.
-
-![](https://github.com/WangHelin1997/MaskSpec/tree/main/resources/structure.png?raw=true)
+<img src="resources/structure.png">
 
 Continuously Updating :)
 
