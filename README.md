@@ -11,7 +11,9 @@ of the input spectrogram and reconstructs the masked regions with an encoder-dec
 outperforms the previous pre-trained models. 
 In particular, our best model reaches the performance of 0.471 (mAP) on AudioSet, 0.854 (mAP) on OpenMIC2018, 0.982 (accuracy) on ESC-50, 0.976 (accuracy) on SCV2, and 0.823 (accuracy) on DCASE2019 Task1A respectively.
 
-<img src="[图片路径](https://github.com/WangHelin1997/MaskSpec/tree/main/resources/structure.png)"/>
+![MaskSpec](https://raw.githubusercontent.com/i-saumitra/Voice-controlled-MP3-Player/master/screenshot.jpg)
+
+<img src="[MaskSpec](https://github.com/WangHelin1997/MaskSpec/tree/main/resources/structure.png)"/>
 
 Continuously Updating :)
 
