@@ -2,14 +2,11 @@
 
 This is the Pytorch implementation of paper: [Masked Spectrogram Prediction For Self-Supervised Audio Pre-Training](https://arxiv.org/pdf/2204.12768.pdf).
 
-Transformer-based models attain excellent results and generalize well when trained on sufficient amounts of data. 
-However, constrained by the limited data available in the audio domain, most transformer-based models for audio tasks are finetuned from pre-trained models in other domains (e.g. image), which has a notable gap with the audio domain. 
-Other methods explore the self-supervised learning approaches directly in the audio domain but currently do not perform well
-in the downstream tasks. 
 In this paper, we present a novel selfsupervised learning method for transformer-based audio models, called masked spectrogram prediction (MaskSpec), to learn powerful audio representations from unlabeled audio data (AudioSet used in this paper). Our method masks random patches
 of the input spectrogram and reconstructs the masked regions with an encoder-decoder architecture. Without using extra model weights or supervision, experimental results on multiple downstream datasets demonstrate MaskSpec achieves a significant performance gain against the supervised methods and
 outperforms the previous pre-trained models. 
 In particular, our best model reaches the performance of 0.471 (mAP) on AudioSet, 0.854 (mAP) on OpenMIC2018, 0.982 (accuracy) on ESC-50, 0.976 (accuracy) on SCV2, and 0.823 (accuracy) on DCASE2019 Task1A respectively.
+
 <img src="resources/structure.png">
 
 Continuously Updating :)
