@@ -94,6 +94,10 @@ python dcase18/get_mean_std.py
 bash dcase18/run.sh
 ```
 
+# Results
+
+<img src="resources/results.png">
+
 
 # References
 
