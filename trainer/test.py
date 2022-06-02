@@ -287,7 +287,7 @@ def testmAP(args):
 
     total_time = time.time() - start_time
     total_time_str = str(datetime.timedelta(seconds=int(total_time)))
-    print('Training time {}'.format(total_time_str))
+    print('Test time {}'.format(total_time_str))
 
 def testsingleFile(args):
     start_time = time.time()
@@ -361,7 +361,7 @@ def testsingleFile(args):
 
     total_time = time.time() - start_time
     total_time_str = str(datetime.timedelta(seconds=int(total_time)))
-    print('Training time {}'.format(total_time_str))
+    print('Test time {}'.format(total_time_str))
 
 
 if __name__ == '__main__':

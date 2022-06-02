@@ -22,6 +22,20 @@ pip install -r requirements.txt
 - Run ```python audioset/get_mean_std.py``` to get the mean and std values in random 10000 samples, and you will get a file named ```mean_std_128.npy``` in your working dir.
 
 # Test scripts
+We provide a simple script to extract the embeddings and get the results of audio tagging. Our trained model can be found [Google Drive page](https://drive.google.com/file/d/1TwP9JMq6EViaSXAhpNMuQW56RIbk-v-v/view?usp=sharing).
+Feel free to download it and use it.
+
+```
+bash scripts/test.sh
+```
+
+Test results:
+
+```
+[04:34:44.007448] Top 8 sound events: ['Cat', 'Animal', 'Domestic animals pets', 'Caterwaul', 'Meow', 'Speech', 'Music', 'Inside, small room']
+[04:34:44.007499] Top 1 sound event: Cat
+[04:34:44.007517] embedding: (1, 768)
+```
 
 # Train scripts
 

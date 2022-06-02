@@ -1,15 +1,15 @@
 BALANCED_DIR='./audioset/mp3/balanced_train_segments_mp3.hdf'
 UNBALANCED_DIR='./audioset/mp3/unbalanced_train_segments_mp3.hdf'
 EVAL_DIR='./audioset/mp3/eval_segments_mp3.hdf'
-OUTPUT_DIR='./audioset/output_Finetune_vit'
-LOG_DIR='./audioset/log_Finetune_vit'
+OUTPUT_DIR='./audioset/output_test'
+LOG_DIR='./audioset/log_test'
 RESUME='./AudioSet_Pretrained_Finetuned.pth'
 MODEL='vit_base_patch16'
 MODEL_TYPE='vit'
 NORM_FILE='./audioset/mean_std_128.npy'
 TEST_MODE='single'
-CSV_FILE='./audioset/metadata/class_labels_indices.csv'
-TEST_FILE='./audioset/audios/eval_segments/Y__p-iA312kg.wav'
+CSV_FILE='./audioset/class_labels_indices.csv'
+TEST_FILE='./audioset/Y__p-iA312kg.wav'
 
 python3 -m torch.distributed.launch --nproc_per_node=1 --nnodes=1 --use_env trainer/test.py \
     --model ${MODEL} \
