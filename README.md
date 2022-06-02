@@ -1,6 +1,6 @@
 # MaskSpec
 
-This is the Pytorch implementation of paper: Masked Spectrogram Prediction For Self-Supervised Audio Pre-Training.
+This is the Pytorch implementation of paper: [Masked Spectrogram Prediction For Self-Supervised Audio Pre-Training](https://arxiv.org/pdf/2204.12768.pdf).
 
 Continuously Updating :)
 
