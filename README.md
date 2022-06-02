@@ -22,7 +22,7 @@ pip install -r requirements.txt
 - Run ```python audioset/get_mean_std.py``` to get the mean and std values in random 10000 samples, and you will get a file named ```mean_std_128.npy``` in your working dir.
 
 # Test scripts
-We provide a simple script to extract the embeddings and get the results of audio tagging. Our trained model can be found [Google Drive page](https://drive.google.com/file/d/1TwP9JMq6EViaSXAhpNMuQW56RIbk-v-v/view?usp=sharing).
+We provide a simple script to extract the embeddings and get the results of audio tagging. Our trained model (mAP of 0.470 on AudioSet) can be found [Google Drive page](https://drive.google.com/file/d/1TwP9JMq6EViaSXAhpNMuQW56RIbk-v-v/view?usp=sharing).
 Feel free to download it and use it.
 
 ```
@@ -38,6 +38,8 @@ Test results:
 ```
 
 # Train scripts
+
+If you want to train your own MaskSpec models, we provide the following training scripts.
 
 ## Preparing Dataset
 
@@ -75,8 +77,25 @@ The base Vit model can be fintuned for example like this (using 8 GPUs):
 bash scripts/finetune_vit.sh
 ```
 
+## Finetuning on downstream datasets 
+
+The base Vit model can be fintuned for example like this:
+```
+python dcase18/convert_to_mp3.py
+python dcase18/create_h5pymp3_dataset.py
+python dcase18/get_mean_std.py
+bash dcase18/run.sh
+```
+
 
 # References
 
 1. [PaSST: Efficient Training of Audio Transformers with Patchout](https://github.com/kkoutini/PaSST)
 2. [Masked Autoencoders Are Scalable Vision Learners](https://github.com/facebookresearch/mae)
+
+
+## Contact
+If you have any problem about our code, feel free to contact
+- wanghl15@pku.edu.cn
+
+or describe your problem in Issues.
