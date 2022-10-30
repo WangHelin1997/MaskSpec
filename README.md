@@ -107,6 +107,6 @@ bash dcase18/run.sh
 
 ## Contact
 If you have any problem about our code, feel free to contact
-- wanghl15@pku.edu.cn
+- hwang258@jhu.edu
 
 or describe your problem in Issues.
