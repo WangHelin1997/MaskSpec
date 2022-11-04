@@ -11,6 +11,7 @@ python3 -m torch.distributed.launch --nproc_per_node=8 --nnodes=1 --use_env trai
     --model ${MODEL} \
     --model_type ${MODEL_TYPE} \
     --batch_size 64 \
+    --seed 3407 \
     --balanced_train_hdf5 ${BALANCED_DIR} \
     --unbalanced_train_hdf5 ${UNBALANCED_DIR} \
     --eval_hdf5 ${EVAL_DIR} \
