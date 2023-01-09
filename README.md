@@ -30,7 +30,8 @@ pip install -r requirements.txt
 
 # Test scripts
 We provide a simple script to extract the embeddings and get the results of audio tagging. Our trained model (mAP of 0.471 on AudioSet) can be found [Google Drive page](https://drive.google.com/file/d/1TwP9JMq6EViaSXAhpNMuQW56RIbk-v-v/view?usp=sharing).
-Feel free to download it and use it.
+The pretrained model can also be found [Google Drive page](https://drive.google.com/file/d/1hmbsqmMEB7j5MNq8L9w_htOe7UW7QKwb/view?usp=share_link).
+Feel free to download them and use them.
 
 ```
 bash scripts/test.sh
