@@ -120,7 +120,8 @@ class SwinTransformerForSimMIM(SwinTransformer):
         x = self.reshape_wav2img(x)
         z, mask = self.forward_features(x, mask_ratio)
         x_rec = self.decoder(z)
-        mask = (1. - mask).reshape(x.shape[0], self.patches_resolution[0], self.patches_resolution[1])
+        # mask = (1. - mask).reshape(x.shape[0], self.patches_resolution[0], self.patches_resolution[1])
+        mask = mask.reshape(x.shape[0], self.patches_resolution[0], self.patches_resolution[1])
         mask = mask.repeat_interleave(self.patch_size, 1).repeat_interleave(self.patch_size, 2).unsqueeze(1).contiguous()
         if self.norm_pix_loss:
             mean = x.mean(dim=-1, keepdim=True)
